@@ -1,0 +1,147 @@
+
+body {
+  margin: 0;
+  background-color: #f3f5f9;
+  color: #263348;
+  font-family: Arial, sans-serif;
+}
+
+.game {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #596579;
+}
+
+.scores {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.scores div {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #dee3eb;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.scores span,
+.scores strong {
+  display: block;
+}
+
+.scores span {
+  margin-bottom: 8px;
+  color: #596579;
+  font-size: 14px;
+}
+
+.scores strong {
+  font-size: 23px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #dee3eb;
+  border-radius: 10px;
+  padding: 35px;
+  text-align: center;
+}
+
+.scrambled {
+  margin: 24px 0 32px;
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.guess-row {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #aab4c4;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #345dc4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 22px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #254aab;
+}
+
+.pass-button {
+  background-color: #68758b;
+}
+
+.pass-button:hover {
+  background-color: #505b6e;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.message {
+  min-height: 20px;
+  margin: 20px 0;
+}
+
+@media (max-width: 500px) {
+  .game {
+    margin: 20px auto;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .scrambled {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+
+  .scores div {
+    padding: 12px 5px;
+  }
+
+  .guess-row {
+    flex-direction: column;
+  }
+}
